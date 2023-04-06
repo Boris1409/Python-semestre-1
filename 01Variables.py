@@ -6,4 +6,6 @@ v="vivo en la ciudad de"
 l="La Unión"
 c="Chile"
 
+
+input("¿Cual es tu nombre?" )
 print(h + " " + b + " " + y + " " + e + " " + v + " " + l + " " + c + " " + "adios mamahuevo")
