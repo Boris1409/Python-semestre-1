@@ -8,4 +8,5 @@ c="Chile"
 
 
 input("¿Cual es tu nombre?" )
-print(h + " " + b + " " + y + " " + e + " " + v + " " + l + " " + c + " " + "adios mamahuevo")
+# print(h + " " + b + " " + y + " " + e + " " + v + " " + l + " " + c + " " + "adios mamahuevo")
+print(f"Hola mi nombre es (b) (y) (e) vivo en la ciudad de (l) (c)")
