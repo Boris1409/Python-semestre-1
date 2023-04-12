@@ -92,3 +92,41 @@ print(list("Python"))
 print("\n")
 print(list(range(10)))
 print("\n")
+
+#05 TUPLAS NO SON MUTABLES
+grupo1 = ("Daniel","Cristian","Felipe",200,100,"Daniel")
+print("####### 05-TUPLAS #####")
+print(type(grupo1))
+
+#Accediendo al primer elemento  de la tupla 
+
+print(grupo1[0])
+#Consultando el elemento Daniel cuantas veces se encuentra en la lista
+
+print("El elemento se repite:", grupo1.count("Daniel"))
+
+print("Indice del elemento", grupo1.index ("Daniel"))
+
+# grupo1[0] =  "Constanza"
+# print(grupo1)
+grupo2 = ("Pedro",100,"Felipe","Diego",2020,"Daniel" "Alejandra")
+print(grupo1[2:5])
+
+conjunto_vacio = set()
+print(type(conjunto_vacio))
+conjunto_colores = set(["Azul","Rojo","Verde"])
+conjunto_animales = {"Gato", "Perro", "Loro"}
+
+print("##### 06-SETS#####")
+print(type(conjunto_colores))
+print(type(conjunto_animales))
+print("El primer set contiene los siguientes colores:",conjunto_colores)
+print("El segundo set contiene los siguientes animales:",conjunto_animales)
+
+# print(conjunto_animales{0})
+
+conjunto_colores.add("Celeste")
+print("El set de colores lo conforman:",conjunto_colores)
+conjunto_colores.add("Pato")
+print("El set de animales lo conforman:",conjunto_animales,"\n")
+
