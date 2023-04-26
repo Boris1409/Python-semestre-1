@@ -1,12 +1,36 @@
 {
     "cSpell.words": [
+        "agregarle",
+        "bloque",
+        "cadenas",
+        "código",
+        "colección",
         "conforman",
         "contiene",
         "Cristian",
+        "cumpla",
+        "darle",
+        "decimales",
+        "digitar",
+        "dividir",
         "estado",
+        "fechas",
+        "formatear",
+        "igual",
+        "ingresar",
+        "manejar",
+        "mientras",
+        "Permiten",
+        "propiedades",
         "ramo",
         "Rojo",
+        "saludar",
         "semestre",
+        "será",
+        "Transformando",
         "TUPLAS"
-    ]
+    ],
+    "CodeGPT.model": "text-davinci-003",
+    "CodeGPT.query.language": "Spanish",
+    "CodeGPT.maxTokens": 500
 }

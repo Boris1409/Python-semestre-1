@@ -1,6 +1,8 @@
-nombre = "Boris"
-edad = 18
-total_edad = edad**2
-input =("Cual es tu edad?")
+nombre = input("¿Cual es tu nombre?\n")
+edad = input("¿Cual es tu edad?\n")
+total_edad= int(edad) + 20
 
-print("Hola mi nombre es", nombre, "tengo", edad, "años y en 20 años tendré") 
+total_edad**2 
+print("Tu edad en 20 años será") (total_edad)
+
+

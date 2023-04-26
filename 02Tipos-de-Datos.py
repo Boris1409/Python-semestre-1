@@ -3,16 +3,18 @@
 #01-DATOS DE TIPO NUMÉRICO
 
 estatura = 1.89
-peso = 70
+peso = 1900.98
 complejo = 1+4j
 
-print("Impresion del número complejo:", complejo)
+print("Impresion del número complejo:", complejo, "\n")
+print("Transformando el numero real a enterooooo", int(peso), "\n")
 
 #OPERACION ARITMETICA BÁSICA 
 
 imc = peso/estatura**2
 imc = 1.89/70**2
-print(imc)
+print("Mi IMC es de: {:.3f}".format(imc), "\n") 
+# Con el .format nos sirve para darle un formato a numeros decimales, si queremos que tenga 1 decimal, 2 decimales, etc. su sintaxis es "{:."Numero"f}".format
 
 """------------------------------------------------------------------------------------------------------------------"""
 
@@ -20,12 +22,19 @@ print(imc)
 
 asignatura = "Programación"
 carrera = "Ingeniería Civil Informatica"
+print("La asignatura de programación tiene un total de:",len(asignatura),"caracteres", "\n") #la funcion "len" permite contabilizar cuantos elementos tiene un string/lista
 
 """------------------------------------------------------------------------------------------------------------------"""
 
 #O3 VALORES BOOLEANOS
-ampolleta = False
-interruptor = True
+Ampolleta = ("Ampolleta")
+ampolleta = False #False siempre sera 0
+interruptor = True #True siempre sera 1
+print("El valor de la ampolleta es: ", ampolleta)
+print("El valor del interruptor es: ", interruptor)
+print("El valor de la ampolleta es: ", int(ampolleta))
+print("El valor del interruptor es: ", int(interruptor))
+print("Ampolleta tiene un total de: ", len(Ampolleta), "caracteres")
 
 
 #TYPE SABEMOS EL TIPO DE DATO QUE ESTAMOS TRATANDO
@@ -57,30 +66,48 @@ print("mi IMC es de: {:.2f}" .format(imc), "\n")
 
 print(type(Estatura))
 
+"""---------------------------------------------------------------------------------------------------------------------------------------"""
+
 print("##### 04-LISTAS ########")
 
 #DECLARANDO LISTAS
 
-estudiantes = ["Matias, Cristian, Franco, Boris"]
+estudiantes = ["Matias", "Cristian", "Franco", "Boris","Jordan"]
 num = [1,2,3,4,5,6]
 lenguaje = ["Python"]
+nueva_lista = list()
+otra_lista = []
 
+print("\n")
+print(estudiantes[4])
+print("\n")
 print(estudiantes, num, lenguaje)
 print("\n")
-print(type(estudiantes))
+print("Estudiantes es de tipo:",type(estudiantes))
+print("Estudiantes tiene un resultado de:",len(estudiantes),"caracteres")
 print("\n")
-print(len(num))
+print("Num tiene un total de:", len(num),"caracteres")
+print("Num es de tipo:",type(num))
+print("\n")
+print("Lenguaje es de tipo:",type(lenguaje))
+print("Lenguaje tiene un total de:",len(lenguaje),"caracteres")
+print("\n")
+print("nueva_lista es de tipo:",type(nueva_lista))
+print("nueva_lista tiene un total de:",len(nueva_lista), "caracteres")
+print("\n")
+print(type(otra_lista))
 print("\n")
 
 data = ["Osorno", {"UV": "nivel bajo", "Temp °C": 15}, (-40.5735,29)]
 print(type(data))
+print(data)
 #FUNCIONES PROPIAS DE PYTHON STR() INT() FLOAT() LEN() TYPE() COUNT("DIEGO")
 
 lenguaje = ["JavScript"]
 
 data_asig = [10023, "Programación",1,True]
 cod,ramo,semestre,estado, = data_asig
-print(ramo)
+print(cod)
 print("\n")
 
 #¿Se podrán sumar listas?
@@ -128,5 +155,52 @@ print("El segundo set contiene los siguientes animales:",conjunto_animales)
 conjunto_colores.add("Celeste")
 print("El set de colores lo conforman:",conjunto_colores)
 conjunto_colores.add("Pato")
-print("El set de animales lo conforman:",conjunto_animales,"\n")
+print("El set de animales lo conforman:",conjunto_animales,"\n") 
+#la funcion int sirve para transformar un entero a decimal
+# la funcion float sirve para agregarle un decimal a un entero
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
