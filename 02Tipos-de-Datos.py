@@ -1,32 +1,35 @@
 """Este es un ejemplo de uso de la libreria de python"""
 
-#01-DATOS DE TIPO NUMÉRICO
+"""01-DATOS DE TIPO NUMÉRICO"""
 
 estatura = 1.89
 peso = 1900.98
 complejo = 1+4j
 
-print("Impresion del número complejo:", complejo, "\n")
+print("Impresion del número complejo:", complejo)
 print("Transformando el numero real a enterooooo", int(peso), "\n")
 
 #OPERACION ARITMETICA BÁSICA 
 
 imc = peso/estatura**2
 imc = 1.89/70**2
-print("Mi IMC es de: {:.3f}".format(imc), "\n") 
+print("Mi IMC es de: {:.3f}".format(imc))
+print("\n") 
 # Con el .format nos sirve para darle un formato a numeros decimales, si queremos que tenga 1 decimal, 2 decimales, etc. su sintaxis es "{:."Numero"f}".format
 
 """------------------------------------------------------------------------------------------------------------------"""
 
-#02- DATOS DE TIPO CADENA DE CARACTERES
+"""02- DATOS DE TIPO CADENA DE CARACTERES"""
 
 asignatura = "Programación"
 carrera = "Ingeniería Civil Informatica"
-print("La asignatura de programación tiene un total de:",len(asignatura),"caracteres", "\n") #la funcion "len" permite contabilizar cuantos elementos tiene un string/lista
+print("La asignatura de programación tiene un total de:",len(asignatura),"caracteres",)#la funcion "len" permite contabilizar cuantos elementos tiene un string/lista
+print("\n")
 
 """------------------------------------------------------------------------------------------------------------------"""
 
-#O3 VALORES BOOLEANOS
+"""O3 VALORES BOOLEANOS"""
+
 Ampolleta = ("Ampolleta")
 ampolleta = False #False siempre sera 0
 interruptor = True #True siempre sera 1
@@ -36,14 +39,14 @@ print("El valor de la ampolleta es: ", int(ampolleta))
 print("El valor del interruptor es: ", int(interruptor))
 print("Ampolleta tiene un total de: ", len(Ampolleta), "caracteres")
 
-
 #TYPE SABEMOS EL TIPO DE DATO QUE ESTAMOS TRATANDO
 
 print(type(ampolleta))
+print("\n")
 
 """------------------------------------------------------------------------------------------------------------------"""
 
-#04- DATOS TIPO ARRAY (OBJETOS DE TIPO COLECCION)
+"""04- DATOS TIPO ARRAY (OBJETOS DE TIPO COLECCION)"""
 
 estudiantes = ("Matias", "Marco", "Cristobal", "Sebastian")
 num = (1,2,3,4,5,6)
@@ -65,12 +68,13 @@ imc = peso/estatura**2
 print("mi IMC es de: {:.2f}" .format(imc), "\n")
 
 print(type(Estatura))
+print("\n")
 
-"""---------------------------------------------------------------------------------------------------------------------------------------"""
+"""--------------------------------------------------------------------------------------------------------------------"""
 
-print("##### 04-LISTAS ########")
+"""04.2-LISTAS"""
 
-#DECLARANDO LISTAS
+# DECLARANDO LISTAS
 
 estudiantes = ["Matias", "Cristian", "Franco", "Boris","Jordan"]
 num = [1,2,3,4,5,6]
@@ -78,11 +82,8 @@ lenguaje = ["Python"]
 nueva_lista = list()
 otra_lista = []
 
-print("\n")
-print(estudiantes[4])
-print("\n")
-print(estudiantes, num, lenguaje)
-print("\n")
+print(estudiantes[4],"\n")
+print(estudiantes, num, lenguaje,"\n")
 print("Estudiantes es de tipo:",type(estudiantes))
 print("Estudiantes tiene un resultado de:",len(estudiantes),"caracteres")
 print("\n")
@@ -113,14 +114,15 @@ print("\n")
 #¿Se podrán sumar listas?
 a=[1,2,3,4]
 b=["Boris",True,100]
-print("Suma de listas", estudiantes + num)
-print("\n")
+print("Suma de listas", estudiantes + num,"\n")
 print(list("Python"))
-print("\n")
 print(list(range(10)))
 print("\n")
 
-#05 TUPLAS NO SON MUTABLES
+"""--------------------------------------------------------------------------------------------------------------------------------"""
+
+"""05 TUPLAS NO SON MUTABLES"""
+
 grupo1 = ("Daniel","Cristian","Felipe",200,100,"Daniel")
 print("####### 05-TUPLAS #####")
 print(type(grupo1))
@@ -143,8 +145,12 @@ conjunto_vacio = set()
 print(type(conjunto_vacio))
 conjunto_colores = set(["Azul","Rojo","Verde"])
 conjunto_animales = {"Gato", "Perro", "Loro"}
+print("\n")
 
-print("##### 06-SETS#####")
+"""---------------------------------------------------------------------------------------------------------------"""
+
+""" 06-SETS"""
+
 print(type(conjunto_colores))
 print(type(conjunto_animales))
 print("El primer set contiene los siguientes colores:",conjunto_colores)
@@ -158,18 +164,47 @@ conjunto_colores.add("Pato")
 print("El set de animales lo conforman:",conjunto_animales,"\n") 
 #la funcion int sirve para transformar un entero a decimal
 # la funcion float sirve para agregarle un decimal a un entero
+print("\n")
 
+"""------------------------------------------------------------------------------------------------------------------"""
 
+""" 07 - DICCIONARIOS""" #(Clave-Valor) 
 
+#Es una estructura de datos, es decir, almacena variables y conjuntos, se puede deducir que lo es por sus llaves
 
+diccionario = dict()
+diccionario2 = {}
 
+#En otros lenguajes se conocen como maps (que es CASI lo mismo)
 
+datos_personales = {
+    "Nombre":"Boris",
+    "Universidad":"ULagos",
+    "Edad": 18,
+    "Asignaturas": "Taller de Introducción a la Ingeniería Informática" "Programación",
+    "Equipo": "Universidad de Chile",
+}
 
+print("Diccionario inicial:",datos_personales,"\n")
 
+#Las claves son únicas para cada valor // No se puede utilizar posiciones como el 0,1,2,3 para print
 
+print(datos_personales["Edad"],"\n")
 
+#Agregando un nuevo valor a una clave del diccionario
 
+datos_personales["Universidad"] = "ULA"
 
+#Agregando una nueva clave al diccionario
+
+datos_personales ["Ciudad"] = "La Unión"
+print("Diccionario con el nuevo campo: ",datos_personales,"\n")
+
+#Eliminando una clave del diccionario
+                 
+del datos_personales["Ciudad"]
+print(datos_personales)
+print("\n")  
 
 
 
