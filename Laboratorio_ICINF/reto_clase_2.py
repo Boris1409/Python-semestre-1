@@ -15,6 +15,13 @@ datos["--Promedio final ponderado--"] = round(prom_pond, 1)
 
 print("\n")
 
-print("-Total de datos ingresados:")
-for clave, valor in datos.items():
-    print(clave + ": " + str(valor))
+datos = {
+    "nombre_estudiante": nombre,"\n"
+    "nombre_asignatura": asignatura,
+    "nota_1": nota_laboratorio1,
+    "nota_2": nota_laboratorio2,
+    "promedio": round(prom_pond,1)
+}
+print(datos)
+
+
