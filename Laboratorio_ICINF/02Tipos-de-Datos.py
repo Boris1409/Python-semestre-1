@@ -2,6 +2,10 @@
 
 """01-DATOS DE TIPO NUMÉRICO"""
 
+from colegio import colegio
+from saludo import saludo
+
+
 estatura = 1.89
 peso = 1900.98
 complejo = 1+4j
@@ -206,7 +210,11 @@ del datos_personales["Ciudad"]
 print(datos_personales)
 print("\n")  
 
+saludo = "Hola Mundo"
+print(saludo[0])
 
+escuela = "Escuela Radimadi"
+print(escuela.split())
 
 
 
