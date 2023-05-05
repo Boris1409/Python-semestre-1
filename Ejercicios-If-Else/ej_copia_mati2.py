@@ -17,4 +17,4 @@ def numero_mayor(num1, num2, num3):
 num_1 = int(input("Escriba el primer numero: "))
 num_2 = int(input("Escriba el segundo numero: "))
 num_3 = int(input("Escriba el tercer numero: "))
-print(numero_mayor(num_1, num_2, num_3))
+numero_mayor(num_1, num_2, num_3)
