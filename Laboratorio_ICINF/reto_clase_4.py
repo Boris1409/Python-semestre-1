@@ -98,3 +98,4 @@ while True:
     
 tupla3 = (nombre3, peso3, estatura3, edad3)
 print(tupla3)
+print("Ejercicio terminado")
