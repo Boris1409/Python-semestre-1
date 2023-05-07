@@ -90,11 +90,11 @@ while True:
         break    
     
 while True:
-    edad3 = int(input("Ingrese la edad del Tercer paciente"))
+    edad3 =  float(input("Ingrese la edad del tercer paciente: "))
     if edad3 <= 0 or edad3 >= 111:
-        print("La edad es invalida, reingrese la edad")
+        print("La edad ingresada es invalida, porfavor reingrese la edad: ")
     else:
         break
     
-tupla_3 = (nombre3, peso3, estatura3, edad3)
-print(tupla_3)
+tupla3 = (nombre3, peso3, estatura3, edad3)
+print(tupla3)
