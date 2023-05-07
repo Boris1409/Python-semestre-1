@@ -3,3 +3,5 @@
 print("Hola\\mundo!")
 print("\n")
 print("Hola\nmundo")
+print("2")
+print(2)
