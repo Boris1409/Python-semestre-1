@@ -87,4 +87,62 @@ print("\nEl nuevo orden de la lista es: ", musica)
 #     musica[i], musica[musica - i - 1] = musica[musica - i - 1], musica[i]
  
 # print(musica)
+print(""" 
+      ORDENANDO LISTAS
+      """)
  
+my_list = [8, 10, 6, 2, 4] 
+swapped = True
+
+while swapped:
+    swapped = False
+for i in range(len(my_list) - 1):
+    if my_list[i] > my_list[i + 1]:
+        swapped = True
+        my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+        while swapped:
+            swapped = False
+            for i in range(len(my_list) - 2):
+                if my_list[i] > my_list[i + 2]:
+                    swapped = True
+                    my_list[i], my_list[i + 2] = my_list[i + 2], my_list[i]
+                    while swapped:
+                        swapped = False
+                        for i in range(len(my_list) - 1):
+                            if my_list[i] > my_list[i + 1]:
+                                swapped = True
+                                my_list[i], my_list[i + 1] = my_list[i + 1], my_list[i]
+ 
+ 
+ 
+print(my_list)
+ 
+my_lists = []
+swapped = True
+num = int(input("¿Cuántos elementos deseas ordenar?: "))
+
+for i in range(num):
+    val = float(input("Ingresa un elemento de la lista: "))
+    my_lists.append(val)
+
+while swapped:
+    swapped = False
+    for i in range(len(my_lists) - 1):
+        if my_lists[i] > my_lists[i + 1]:
+            swapped = True
+            my_lists[i], my_lists[i + 1] = my_lists[i + 1], my_lists[i]
+
+print("\nOrdenada:")
+print(my_lists)
+
+print(""" 
+      EL MECANISMO DE PYTHON PARA 
+      ORDENAR LAS LISTAS
+      """)
+lista = [33, 14, 44, 1, 95, 77]
+lista.sort()
+print(lista)
+
+lst = [3, 2, 4, 5, 1, 0]
+lst.reverse()
+print(lst)
