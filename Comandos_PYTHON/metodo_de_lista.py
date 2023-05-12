@@ -82,3 +82,9 @@ musica[0], musica[3] = musica[3], musica[0]
 musica[1], musica[2] = musica[2], musica[1]
 
 print("\nEl nuevo orden de la lista es: ", musica)
+
+# for i in range(musica // 2):
+#     musica[i], musica[musica - i - 1] = musica[musica - i - 1], musica[i]
+ 
+# print(musica)
+ 
