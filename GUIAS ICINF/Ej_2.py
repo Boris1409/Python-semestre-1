@@ -12,3 +12,5 @@ if len(var1) > len(var2):
     print("La palabra con mas caracteres es: ", var1)
 else:
     print("La palabra con menos caracteres es: ", var2)
+    
+    #AGREGAR UN ELIF A PALABRAS DE IGUAL CARACTERES
