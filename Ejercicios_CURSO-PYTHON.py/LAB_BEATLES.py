@@ -25,17 +25,29 @@ for i in range(1):
           | 'Pete Best'                                      |
           |__________________________________________________|
           """)  
-    
+
+while True:
     nom_1 = input("\nIngrese el primer nombre: ")
     beatles.append(nom_1) 
+    if nom_1 != "Stu Sutcliffe":
+        print("\nPorfavor no seas trollo ingresa el nombre")
+    else:
+        break
+
+while True:
     nom_2 = input("Ingrese el segundo nombre: ")
     beatles.append(nom_2)
-    print("\nHasta el momento estos son los integrantes:",beatles)
-    
-print("Lo siento pero tendremos que eliminar a algunos integrantes de la banda")
-del beatles[5]
-del beatles[4]
+    if nom_2 != "Pete Best":
+        print("Ingresa bien el nombre")
+    else:
+        break
 
+print("\nHasta el momento estos son los integrantes:",beatles)
+print("Lo siento pero tendremos que eliminar a algunos integrantes de la banda")
+
+del beatles[4:-1]
+del beatles[-1]
+        
 print("\nQuieres agregar a un ultimo integrante a la banda?")
 print(""" 
       SI
