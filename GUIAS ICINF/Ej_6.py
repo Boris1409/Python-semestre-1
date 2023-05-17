@@ -18,4 +18,13 @@ de que asi sea, imprimir los nombres de esos estudiantes. Todo esto utilizando
 Sets.
 """
 
-grupo_1 = set("Marcos","Gabriela","Benjamin","Matias")
+grupo1 = {"Marcos","Gabriela","Benjamin","Matias"}
+grupo2 = {"Marcos", "Nicolas", "Diego", "Matias"}
+rep = grupo1 & grupo2
+
+if len(rep) == 0:
+    print("No hay estudiantes que se repitan")
+else:
+    print("Los estudiantes en que se repiten son:")
+    for estudiante in rep:
+        print(estudiante)
