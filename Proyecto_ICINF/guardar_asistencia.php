@@ -12,7 +12,8 @@ $asignatura = $_POST['asignatura'];
 $añoingreso = $_POST['año ingreso'];
 $sede = $_POST['sede']
 
-// Crear la conexión a la base de datos
+// Crear la conexión a la base de dato
+
 $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar la conexión
