@@ -14,22 +14,22 @@ $sede = $_POST['sede']
 
 // Crear la conexión a la base de dato
 
-$conn = new mysqli($servername, $username, $password, $dbname);
+// $conn = new mysqli($servername, $username, $password, $dbname);
 
 // Verificar la conexión
-if ($conn->connect_error) {
-    die("Error en la conexión a la base de datos: " . $conn->connect_error);
-}
+// if ($conn->connect_error) {
+    // die("Error en la conexión a la base de datos: " . $conn->connect_error);
+// }
 
 // Preparar y ejecutar la consulta SQL para insertar los datos en la tabla correspondiente
-$sql = "INSERT INTO asistencia (nombre, rut, asignatura, añoingreso, sede) VALUES ('$nombre', '$rut', '$asignatura', '$añoingreso', '$sede')";
+// $sql = "INSERT INTO asistencia (nombre, rut, asignatura, añoingreso, sede) VALUES ('$nombre', '$rut', '$asignatura', '$añoingreso', '$sede')";
 
-if ($conn->query($sql) === TRUE) {
-    echo "La asistencia se ha registrado correctamente.";
-} else {
-    echo "Error al registrar la asistencia: " . $conn->error;
-}
+// if ($conn->query($sql) === TRUE) {
+//     echo "La asistencia se ha registrado correctamente.";
+// } else {
+//     echo "Error al registrar la asistencia: " . $conn->error;
+// }
 
 // Cerrar la conexión a la base de datos
-$conn->close();
-?>
+// $conn->close();
+// ?>
