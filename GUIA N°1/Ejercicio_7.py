@@ -25,4 +25,4 @@ for numero_factorial in range(1, num+1):
     base_factorial*=numero_factorial 
     
 #Por ultimo arrojamos un mensaje con el resultado del numero que se quiera resolver y su solución de factorial
-print("El factorial de ",num, "es: ", base_factorial)
+print("El factorial de ",num, "es: ", base_factorial)   
