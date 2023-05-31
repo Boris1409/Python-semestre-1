@@ -44,25 +44,25 @@ print(regiones)
 
 print(""" ESTE ES EL NUEVO DICCIONARIO""")
 
-regiones = {
-    14: {
-        "Nombre": "Los Ríos",
-        "Superficie": 18429,
-        "Habitantes": 404432,
-        "DENSIDAD": 21.9,
-        "CAPITAL": "Valdivia",
-        "COMUNAS": ["La Unión","Río Bueno", "Paillaco"],
-        "PROVINCIA": ("Ranco", "Valdivia")
-    },
-    12: {
-        "Nombre": "Magallanes",
-        "Superficie": 1382291,
-        "Habitantes": 166533,
-        "DENSIDAD": 0.1,
-        "CAPITAL": "Punta Arenas",
-        "COMUNAS": ["Magallanes", "Tierra del Fuego","Antártica Chilena"],
-        "PROVINCIA": ("Tierra del Fuego","Última Esperanza",)
-    }
-}
+# regiones = {
+#     14: {
+#         "Nombre": "Los Ríos",
+#         "Superficie": 18429,
+#         "Habitantes": 404432,
+#         "DENSIDAD": 21.9,
+#         "CAPITAL": "Valdivia",
+#         "COMUNAS": ["La Unión","Río Bueno", "Paillaco"],
+#         "PROVINCIA": ("Ranco", "Valdivia")
+#     },
+#     12: {
+#         "Nombre": "Magallanes",
+#         "Superficie": 1382291,
+#         "Habitantes": 166533,
+#         "DENSIDAD": 0.1,
+#         "CAPITAL": "Punta Arenas",
+#         "COMUNAS": ["Magallanes", "Tierra del Fuego","Antártica Chilena"],
+#         "PROVINCIA": ("Tierra del Fuego","Última Esperanza",)
+#     }
+# }
 
 print(regiones)
