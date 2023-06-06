@@ -166,6 +166,7 @@
         "integrantes",
         "integrará",
         "inválida",
+        "invoque",
         "isósceles",
         "jsjsjs",
         "juego",
@@ -316,7 +317,9 @@
         "válido",
         "varios",
         "Viernes",
-        "Vuelva"
+        "Vuelva",
+        "Wenas",
+        "wenassss"
     ],
     "CodeGPT.model": "text-davinci-003",
     "CodeGPT.query.language": "Spanish",
