@@ -7,7 +7,7 @@
 
 lista_nombres=[]
 cantidad_de_letras=[]
-def Ingreso_de_nombre(nombre_sin_espacio,cantidad_de_letras):
+def Ingreso_de_nombre(lista_nombres,cantidad_de_letras):
     while True:
         nombre=input("""
         ###############################################         ##########################################
@@ -24,7 +24,6 @@ def Ingreso_de_nombre(nombre_sin_espacio,cantidad_de_letras):
             print(f"lista de nombres: {lista_nombres} y la suma total de letras: {total_letras}")
             break
         else:
-            nombre_sin_espacio = nombre.replace(" ","")
             suma_de_letras=len(nombre)
             cantidad_de_letras.append(suma_de_letras)
             total_letras=sum(cantidad_de_letras)
