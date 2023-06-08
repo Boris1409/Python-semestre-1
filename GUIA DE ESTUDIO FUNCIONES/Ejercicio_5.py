@@ -12,7 +12,7 @@
 # La suma de pares es: 8
 # La suma de impares es: 26
 # La suma total es: 34
-# El promedio es: 5
+# El promedio es: 6
 # El numero mayor ingresado fue: 9
 # El numero es mayor que el promedio y este es 9
 
@@ -93,13 +93,6 @@ def comparar(nums):
         print(f"El numero mayor es menor que el promedio y este es {max(nums)}")
     else:
         print(f"El numero mayor es igual que el promedio y este es {max(nums)}")
-
-# La suma de pares es: 8
-# La suma de impares es: 26
-# La suma total es: 34
-# El promedio es: 5
-# El numero mayor ingresado fue: 9
-# El numero es mayor que el promedio y este es 9
 
 numeros_enteros()
 sumatoria_pares(nums)
