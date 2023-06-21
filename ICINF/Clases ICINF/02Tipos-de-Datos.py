@@ -19,7 +19,7 @@ print("\n")
 
 """------------------------------------------------------------------------------------------------------------------"""
 
-"""02- DATOS DE TIPO CADENA DE CARACTERES"""
+"""02- DATOS DE TIPO CADENA DE CARACTERES / Strings"""
 
 asignatura = "Programación"
 carrera = "Ingeniería Civil Informatica"
