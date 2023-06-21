@@ -140,16 +140,16 @@ print("Indice del elemento", grupo1.index ("Daniel"))
 # print(grupo1)
 grupo2 = ("Pedro",100,"Felipe","Diego",2020,"Daniel" "Alejandra")
 print(grupo1[2:5])
-
-conjunto_vacio = set()
-print(type(conjunto_vacio))
-conjunto_colores = set(["Azul","Rojo","Verde"])
-conjunto_animales = {"Gato", "Perro", "Loro"}
 print("\n")
 
 """---------------------------------------------------------------------------------------------------------------"""
 
 """ 06-SETS"""
+
+conjunto_vacio = set()
+print(type(conjunto_vacio))
+conjunto_colores = set(["Azul","Rojo","Verde"])
+conjunto_animales = {"Gato", "Perro", "Loro"}
 
 print(type(conjunto_colores))
 print(type(conjunto_animales))
