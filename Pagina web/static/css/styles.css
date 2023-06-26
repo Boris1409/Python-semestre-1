@@ -168,7 +168,7 @@ form button:hover {
     align-items: center;
     justify-content: center;
     gap: .5em;
-    background-color: #1f2029;
+    background-color: #27291f;
     border-radius: 4px;
     padding: .5em 1em;
    }
@@ -280,7 +280,7 @@ form button:hover {
   
 
 .input-field{
-  color: #d3d3d3;
+  color: black;
 }
 
 /*css para centrar*/
@@ -365,5 +365,6 @@ form button:hover {
     opacity: 1;
   }
 }
-
-
+  .Contacto{
+  color: black;
+}

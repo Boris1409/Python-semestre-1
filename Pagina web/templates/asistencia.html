@@ -1,16 +1,20 @@
 {% extends 'layout.html' %}
 
 {% block content %}
-    <h2>Tomar Asistencia</h2>
+    
     {% if mensaje %}
         <p>{{ mensaje }}</p>
     {% endif %}
    
     
+    <br><br>
+
     <form method="POST" action="" class="formulario">
+        <div class="contenedor-register">
+            <p class="form-title">Registra tu asistencia</p>
+        </div>   
         <div class="input-group">
-            <label for="correo">Correo electrónico:</label>
-            <input type="text" id="correo" name="correo" class="input-field" required>
+            <input type="text" id="correo" name="correo" placeholder="Ingresa tu correo" class="input-field" required>
         </div>
         <div class="input-group">
             <label for="dominio_correo"></label>
@@ -20,12 +24,13 @@
             </select>
         </div>
         <div class="input-group">
-            <label for="contraseña">Contraseña:</label>
-            <input type="password" id="contraseña" name="contraseña" class="input-field" required>
+            <input type="password" id="contraseña" placeholder="Ingresa tu contraseña" name="contraseña" class="input-field" required>
         </div>
         <input type="submit" id="boton_submit" value="Marcar Asistencia">
     </form>
    
+    
+
 
 
 
