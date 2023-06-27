@@ -22,7 +22,7 @@ def sueldo(trabajadores):
     print('El sueldo mas alto de Maria es: ', sueldo_maria)
     print('El sueldo mas alto de Pedro es: ', sueldo_pedro)
 
-totales_impuestos = ()
+
 
 def retencion_impuestos(trabajadores):
     total_juan  = sum(trabajadores[0][1])
