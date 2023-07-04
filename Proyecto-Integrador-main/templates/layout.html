@@ -1,12 +1,12 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <title>Asistencia - {{ page_title }}</title>
+    <title>Asistencia Ulagos- {{ page_title }}</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/styles.css') }}">
     <link rel="shortcut icon" href="{{ url_for('static', filename='imagenes/logo.png') }}" type="image/x-icon">
 </head>
 <body>
-    <h1>Bienvenido al registro de asistencia Ulagos</h1>
+    <h1>Asistencia</h1>
     <header>
         <nav>
             <ul class="menu">
@@ -17,31 +17,13 @@
             </ul>
         </nav>
     </header>
+    {% block content %}{% endblock %}
 
-    <h2>Página principal</h2>
-    
-        
-        
-    <img src="/static/imagenes/p.png" alt="logo Ulagos" width="1000" height="350" >
-            
-    <br> <br>
-   
-        
-    <main>
-        <div>
-        <article class="info">
-            <span>Estimados estudiantes</span>
-            <br>
-            "Para el acceso a Ulagos Virtual es necesario tener la cuenta de correo ULAGOS."
-        </article>
-        </div>
-    </main>
-    
-    <br> <br>
 </body>
-
 
 <footer>
     <p>&copy; Universidad de los Lagos - Todos los derechos reservados</p>
+    <p>La Universidad de Los Lagos es una universidad pública chilena, creada en 1993, producto de la fusión de la Universidad Técnica del Estado sede Osorno y la Universidad de Osorno. Tiene su sede central en la ciudad de Osorno, Región de Los Lagos, Chile.</p>
 </footer>
 </html>
+

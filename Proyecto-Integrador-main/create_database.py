@@ -1,4 +1,6 @@
 import sqlite3
+from werkzeug.security import generate_password_hash
+
 
 # Conexión a la base de datos
 conn = sqlite3.connect('base_datos.db')
@@ -57,22 +59,22 @@ c.execute('''CREATE TABLE IF NOT EXISTS asistencia
 
 # Insertar usuarios con correos y contraseñas
 usuarios_data = [
-    ("Juan Perez", "12345678-9", "est1@est.com", "pass1"),
-    ("María González", "98765432-1", "est2@est.com", "pass2"),
-    ("Pedro Ramirez", "56789012-3", "est3@est.com", "pass3"),
-    ("Ana López", "21098765-4", "est4@est.com", "pass4"),
-    ("Luis Torres", "43210987-6", "est5@est.com", "pass5"),
-    ("Carolina Herrera", "87654321-0", "est6@est.com", "pass6")
+    ("Juan Perez", "12345678-9", "est1@est.com", generate_password_hash("pass1")),
+    ("María González", "98765432-1", "est2@est.com", generate_password_hash("pass2")),
+    ("Pedro Ramirez", "56789012-3", "est3@est.com", generate_password_hash("pass3")),
+    ("Ana López", "21098765-4", "est4@est.com", generate_password_hash("pass4")),
+    ("Luis Torres", "43210987-6", "est5@est.com", generate_password_hash("pass5")),
+    ("Carolina Herrera", "87654321-0", "est6@est.com", generate_password_hash("pass6"))
 ]
 
 c.executemany("INSERT INTO usuarios (nombre, rut, correo, contraseña) VALUES (?, ?, ?, ?)", usuarios_data)
 
 # Insertar docentes con correos y contraseñas
 docentes_data = [
-    ("Profesor Matemáticas", "Matematicas", "doc1@doc.com", "pass1"),
-    ("Profesor Química", "Quimica", "doc2@doc.com", "pass2"),
-    ("Profesor Física", "Fisica", "doc3@doc.com", "pass3"),
-    ("Profesor Programación", "Programacion", "doc4@doc.com", "pass4")
+    ("Profesor Matemáticas", "Matematicas", "doc1@doc.com", generate_password_hash("pass1")),
+    ("Profesor Química", "Quimica", "doc2@doc.com", generate_password_hash("pass2")),
+    ("Profesor Física", "Fisica", "doc3@doc.com", generate_password_hash("pass3")),
+    ("Profesor Programación", "Programacion", "doc4@doc.com", generate_password_hash("pass4"))
 ]
 
 c.executemany("INSERT INTO docentes (nombre, asignatura, correo, contraseña) VALUES (?, ?, ?, ?)", docentes_data)
