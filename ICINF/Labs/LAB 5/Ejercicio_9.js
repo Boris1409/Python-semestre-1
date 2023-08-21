@@ -27,9 +27,9 @@ limitadores.forEach(function (limitador) {
         //Extrae el valor actual de las cantidades ingresadas y lo convierte a un número de punto flotante, almacenándolo en la constante numero.
         const numero = parseFloat(limitador.value);
         //Extrae el valor mínimo permitido para este elemento desde su atributo min, convirtiéndolo a un número de punto flotante y almacenándolo en la constante min.
-        const min = parseFloat(limitador.min);
+        const min = 0;
         //Extrae el valor maximo permitido para este elemento desde su atributo max, convirtiéndolo a un número de punto flotante y almacenándolo en la constante max.
-        const max = parseFloat(limitador.max);
+        const max = 100;
         
         //Si el valor actual de "numero" es menor que el mínimo permitido, lo ajusta al valor mínimo definido.
         if (numero < min) {
