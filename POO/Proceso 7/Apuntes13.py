@@ -59,6 +59,7 @@ class Auto:
         else:
             return "No se mueve"
         
+        
 auto_mio=Auto(3)
 print(auto_mio.arrancar())
 print(auto_mio.conducir())

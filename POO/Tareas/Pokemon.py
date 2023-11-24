@@ -34,7 +34,7 @@ class Pokemon:
               - PS_Base: {self.ps_base}
               - Ataque: {self.ataque}
               - Defensa: {self.defensa}
-              - Velocidad: {self.velocidad}
+              - Velocidad: {self.velocidad} 
               """)
     
     # METODO PARA COMPARAR LAS ESTADISTICAS DE DOS POKEMON Y DEVUELVE UN TRUE SI EL PRIMER POKEMON
