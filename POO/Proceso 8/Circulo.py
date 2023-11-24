@@ -1,5 +1,3 @@
-import Cuadrado
-
 class Circulo:
     
     def __init__(self, x):
