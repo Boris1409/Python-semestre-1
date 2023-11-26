@@ -1,0 +1,45 @@
+import math 
+class Cuadrado:
+    def __init__(self,x):
+        self.x=x
+    def perimetro(self):
+        return 4*self.x
+    def area(self):
+        return self.x**2
+
+class Circulo:
+    def __init__(self,x):
+        self.x=x
+    def area(self):
+        return math.pi*self.x**2
+    def perimetro(self):
+        return 2*math.pi*self.x
+
+
+class Circunferencia:
+    def __init__(self,x): #metodo constructor
+        assert x>0
+        self.r=x #atributo para radio
+    def perimetro(self):
+        return 2*math.pi*self.r
+    
+# r=float(input('radio?'))
+# c=Circunferencia(r)
+# print('perímetro=',c.perimetro())
+
+
+# Programa:
+
+r=input("circulo o cuadrado? ").lower()
+# crear un objeto de clase circulo o clase cuadrado
+if r=='circulo':
+    c=Circulo(float(input('radio? ')))
+elif r=='cuadrado':
+    c=Cuadrado(float(input('lado? ')))
+else:
+    print('Debe ser un circulo o un cuadrado')
+    c=None
+
+if c!= None:
+    print(f"area= {round(c.area(),2)}")
+    print(f"perimetro={round(c.perimetro(),2)}")
