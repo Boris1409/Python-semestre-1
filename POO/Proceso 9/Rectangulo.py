@@ -46,4 +46,3 @@ class Rectangulo:
                 fila += 1
                 print(c+(" "*(self.ancho-2))+c)
             print("") 
-    
